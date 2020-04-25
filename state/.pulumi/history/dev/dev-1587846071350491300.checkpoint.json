@@ -1,0 +1,175 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "dev",
+        "latest": {
+            "manifest": {
+                "time": "2020-04-25T15:21:11.2215024-05:00",
+                "magic": "1cf887de9e8df1530de6a3a80e5fb8cef3c26c5248611921bd860c85313a688f",
+                "version": "v2.0.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:Lt37djub/Gs=:v1:0SxWy9CjzS4CPHOE:0rfOfugVLsZN6JovLUIU4XI8tn1JZA=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::DemoAzurePulumi::pulumi:pulumi:Stack::DemoAzurePulumi-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=sapulumia899aecc;AccountKey=pfYk3dZGGjj+d5/+Ig2Ja7aRs1Yo1jJBVsiaAvbKsec30q0f9z8Q4j9OA3v/zVzxpk/MvCdtESozHLQ/DrUUGw==;EndpointSuffix=core.windows.net"
+                    }
+                },
+                {
+                    "urn": "urn:pulumi:dev::DemoAzurePulumi::pulumi:providers:azure::default_3_2_0",
+                    "custom": true,
+                    "id": "cdd03f51-45c1-45ce-a85d-0a18c05a0b5d",
+                    "type": "pulumi:providers:azure",
+                    "inputs": {
+                        "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                        "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                        "location": "WestUS",
+                        "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                        "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                        "version": "3.2.0"
+                    },
+                    "outputs": {
+                        "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                        "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                        "location": "WestUS",
+                        "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                        "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                        "version": "3.2.0"
+                    }
+                },
+                {
+                    "urn": "urn:pulumi:dev::DemoAzurePulumi::azure:core/resourceGroup:ResourceGroup::rgPulumi",
+                    "custom": true,
+                    "id": "/subscriptions/00b37f75-2032-43ed-a73c-ba30e7336ca8/resourceGroups/rgpulumi441374b1",
+                    "type": "azure:core/resourceGroup:ResourceGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "location",
+                            "name"
+                        ],
+                        "location": "WestUS",
+                        "name": "rgpulumi441374b1"
+                    },
+                    "outputs": {
+                        "id": "/subscriptions/00b37f75-2032-43ed-a73c-ba30e7336ca8/resourceGroups/rgpulumi441374b1",
+                        "location": "westus",
+                        "name": "rgpulumi441374b1",
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::DemoAzurePulumi::pulumi:pulumi:Stack::DemoAzurePulumi-dev",
+                    "provider": "urn:pulumi:dev::DemoAzurePulumi::pulumi:providers:azure::default_3_2_0::cdd03f51-45c1-45ce-a85d-0a18c05a0b5d"
+                },
+                {
+                    "urn": "urn:pulumi:dev::DemoAzurePulumi::azure:storage/account:Account::saPulumi",
+                    "custom": true,
+                    "id": "/subscriptions/00b37f75-2032-43ed-a73c-ba30e7336ca8/resourceGroups/rgpulumi441374b1/providers/Microsoft.Storage/storageAccounts/sapulumia899aecc",
+                    "type": "azure:storage/account:Account",
+                    "inputs": {
+                        "__defaults": [
+                            "accountKind",
+                            "enableHttpsTrafficOnly",
+                            "isHnsEnabled",
+                            "location",
+                            "name"
+                        ],
+                        "accountKind": "StorageV2",
+                        "accountReplicationType": "LRS",
+                        "accountTier": "Standard",
+                        "enableHttpsTrafficOnly": true,
+                        "isHnsEnabled": false,
+                        "location": "westus",
+                        "name": "sapulumia899aecc",
+                        "resourceGroupName": "rgpulumi441374b1"
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"2\"}",
+                        "accessTier": "Hot",
+                        "accountKind": "StorageV2",
+                        "accountReplicationType": "LRS",
+                        "accountTier": "Standard",
+                        "blobProperties": null,
+                        "enableHttpsTrafficOnly": true,
+                        "id": "/subscriptions/00b37f75-2032-43ed-a73c-ba30e7336ca8/resourceGroups/rgpulumi441374b1/providers/Microsoft.Storage/storageAccounts/sapulumia899aecc",
+                        "identity": null,
+                        "isHnsEnabled": false,
+                        "location": "westus",
+                        "name": "sapulumia899aecc",
+                        "networkRules": {
+                            "bypasses": [
+                                "AzureServices"
+                            ],
+                            "defaultAction": "Allow",
+                            "ipRules": [],
+                            "virtualNetworkSubnetIds": []
+                        },
+                        "primaryAccessKey": "pfYk3dZGGjj+d5/+Ig2Ja7aRs1Yo1jJBVsiaAvbKsec30q0f9z8Q4j9OA3v/zVzxpk/MvCdtESozHLQ/DrUUGw==",
+                        "primaryBlobConnectionString": "DefaultEndpointsProtocol=https;BlobEndpoint=https://sapulumia899aecc.blob.core.windows.net/;AccountName=sapulumia899aecc;AccountKey=pfYk3dZGGjj+d5/+Ig2Ja7aRs1Yo1jJBVsiaAvbKsec30q0f9z8Q4j9OA3v/zVzxpk/MvCdtESozHLQ/DrUUGw==",
+                        "primaryBlobEndpoint": "https://sapulumia899aecc.blob.core.windows.net/",
+                        "primaryBlobHost": "sapulumia899aecc.blob.core.windows.net",
+                        "primaryConnectionString": "DefaultEndpointsProtocol=https;AccountName=sapulumia899aecc;AccountKey=pfYk3dZGGjj+d5/+Ig2Ja7aRs1Yo1jJBVsiaAvbKsec30q0f9z8Q4j9OA3v/zVzxpk/MvCdtESozHLQ/DrUUGw==;EndpointSuffix=core.windows.net",
+                        "primaryDfsEndpoint": "https://sapulumia899aecc.dfs.core.windows.net/",
+                        "primaryDfsHost": "sapulumia899aecc.dfs.core.windows.net",
+                        "primaryFileEndpoint": "https://sapulumia899aecc.file.core.windows.net/",
+                        "primaryFileHost": "sapulumia899aecc.file.core.windows.net",
+                        "primaryLocation": "westus",
+                        "primaryQueueEndpoint": "https://sapulumia899aecc.queue.core.windows.net/",
+                        "primaryQueueHost": "sapulumia899aecc.queue.core.windows.net",
+                        "primaryTableEndpoint": "https://sapulumia899aecc.table.core.windows.net/",
+                        "primaryTableHost": "sapulumia899aecc.table.core.windows.net",
+                        "primaryWebEndpoint": "https://sapulumia899aecc.z22.web.core.windows.net/",
+                        "primaryWebHost": "sapulumia899aecc.z22.web.core.windows.net",
+                        "queueProperties": {
+                            "corsRules": [],
+                            "hourMetrics": {
+                                "enabled": true,
+                                "includeApis": true,
+                                "retentionPolicyDays": 7,
+                                "version": "1.0"
+                            },
+                            "logging": {
+                                "delete": false,
+                                "read": false,
+                                "retentionPolicyDays": 0,
+                                "version": "1.0",
+                                "write": false
+                            },
+                            "minuteMetrics": {
+                                "enabled": false,
+                                "includeApis": false,
+                                "retentionPolicyDays": 0,
+                                "version": "1.0"
+                            }
+                        },
+                        "resourceGroupName": "rgpulumi441374b1",
+                        "secondaryAccessKey": "Gsu8qvf7+CxLSVH5mVFzF4Hv4WFZDY+UrnrWB3F22pX+n8Gvox+/yuVirq8Q01jeukqs7207QfyYAJi0zk8N7A==",
+                        "secondaryBlobConnectionString": "",
+                        "secondaryConnectionString": "DefaultEndpointsProtocol=https;AccountName=sapulumia899aecc;AccountKey=Gsu8qvf7+CxLSVH5mVFzF4Hv4WFZDY+UrnrWB3F22pX+n8Gvox+/yuVirq8Q01jeukqs7207QfyYAJi0zk8N7A==;EndpointSuffix=core.windows.net",
+                        "secondaryLocation": "",
+                        "staticWebsite": null,
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::DemoAzurePulumi::pulumi:pulumi:Stack::DemoAzurePulumi-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::DemoAzurePulumi::azure:core/resourceGroup:ResourceGroup::rgPulumi"
+                    ],
+                    "provider": "urn:pulumi:dev::DemoAzurePulumi::pulumi:providers:azure::default_3_2_0::cdd03f51-45c1-45ce-a85d-0a18c05a0b5d",
+                    "propertyDependencies": {
+                        "accountReplicationType": null,
+                        "accountTier": null,
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::DemoAzurePulumi::azure:core/resourceGroup:ResourceGroup::rgPulumi"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

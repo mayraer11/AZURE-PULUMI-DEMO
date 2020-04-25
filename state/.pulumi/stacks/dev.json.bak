@@ -1,0 +1,70 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "dev",
+        "latest": {
+            "manifest": {
+                "time": "2020-04-25T15:23:57.5913768-05:00",
+                "magic": "1cf887de9e8df1530de6a3a80e5fb8cef3c26c5248611921bd860c85313a688f",
+                "version": "v2.0.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:Lt37djub/Gs=:v1:0SxWy9CjzS4CPHOE:0rfOfugVLsZN6JovLUIU4XI8tn1JZA=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::DemoAzurePulumi::pulumi:providers:azure::default_3_2_0",
+                    "custom": true,
+                    "id": "cdd03f51-45c1-45ce-a85d-0a18c05a0b5d",
+                    "type": "pulumi:providers:azure",
+                    "inputs": {
+                        "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                        "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                        "location": "WestUS",
+                        "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                        "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                        "version": "3.2.0"
+                    },
+                    "outputs": {
+                        "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                        "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                        "location": "WestUS",
+                        "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                        "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                        "version": "3.2.0"
+                    }
+                }
+            ],
+            "pending_operations": [
+                {
+                    "resource": {
+                        "urn": "urn:pulumi:dev::DemoAzurePulumi::pulumi:providers:azure::default_3_2_0",
+                        "custom": true,
+                        "id": "cdd03f51-45c1-45ce-a85d-0a18c05a0b5d",
+                        "type": "pulumi:providers:azure",
+                        "inputs": {
+                            "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                            "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                            "location": "WestUS",
+                            "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                            "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                            "version": "3.2.0"
+                        },
+                        "outputs": {
+                            "clientId": "6512848e-90e3-428f-8c74-fd8903e86785",
+                            "clientSecret": "63dc8cfc-a5ba-42d4-8e58-e7143a92d8dc",
+                            "location": "WestUS",
+                            "subscriptionId": "00b37f75-2032-43ed-a73c-ba30e7336ca8",
+                            "tenantId": "446bebe4-8f60-4da8-b873-1b992395791e",
+                            "version": "3.2.0"
+                        }
+                    },
+                    "type": "deleting"
+                }
+            ]
+        }
+    }
+}
